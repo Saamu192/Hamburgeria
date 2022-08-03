@@ -1,0 +1,12 @@
+.item__tag {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  margin-left: 1.25rem;
+  margin-top: 1rem;
+
+  color: #828282;
+}

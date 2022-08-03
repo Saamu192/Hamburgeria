@@ -1,0 +1,20 @@
+.srch__btn {
+  width: 6.5rem;
+  height: 2.5rem;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+  background: #27ae60;
+  border: 2px solid #27ae60;
+  border-radius: 8px;
+}
+
+.srch__btn:hover {
+  background: #93d7af;
+  border: 2px solid #93d7af;
+}

@@ -1,0 +1,18 @@
+.btn__remove {
+  width: 3rem;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #bdbdbd;
+  background-color: #f5f5f5;
+
+  border: none;
+}
+
+.btn__remove:hover {
+  color: black;
+}
