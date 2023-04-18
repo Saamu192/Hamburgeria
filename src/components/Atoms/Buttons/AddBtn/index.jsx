@@ -2,7 +2,7 @@ import "./style.css";
 function AddBtn({ cartAddHandler, element }) {
   return (
     <button
-    plausible-envent-compra={element}
+    plausible-event-compra={element.name}
       onClick={(event) => {
         event.preventDefault();
         cartAddHandler(element);
