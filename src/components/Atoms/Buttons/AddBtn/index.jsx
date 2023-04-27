@@ -8,7 +8,7 @@ function AddBtn({ cartAddHandler, element }) {
         /*global function, plausible*/
         /*eslint no-undef: "error"*/
         plausible("compra", {
-          payload: { produto: element.name, preco: element.price },
+          props: { produto: element.name, preco: element.price },
         });
       }}
       className="btn__add"
