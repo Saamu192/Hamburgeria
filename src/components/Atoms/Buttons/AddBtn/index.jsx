@@ -2,10 +2,14 @@ import "./style.css";
 function AddBtn({ cartAddHandler, element }) {
   return (
     <button
-    plausible-event-compra={element.name}
       onClick={(event) => {
         event.preventDefault();
         cartAddHandler(element);
+        /*global function, plausible*/
+        /*eslint no-undef: "error"*/
+        plausible("compra", {
+          payload: { produto: element.name, preco: element.price },
+        });
       }}
       className="btn__add"
     >
