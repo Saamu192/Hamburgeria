@@ -9,7 +9,17 @@ function AddBtn({ cartAddHandler, element }) {
         /*eslint no-undef: "error"*/
         plausible("compra", {
           props: {
-            produto: { nome: element.name, categoria: element.category },
+            products: [
+              {
+                brand: "Carmensitas",
+                category: "Roupas/Calças",
+                id: element.id,
+                name: element.name,
+                price: element.price,
+                quantity: 1,
+                variant: "CALÇA FLARE CANELADA ISA - P",
+              },
+            ],
             preco: element.price,
           },
         });
@@ -21,3 +31,15 @@ function AddBtn({ cartAddHandler, element }) {
   );
 }
 export default AddBtn;
+
+// products: [
+//   {
+//     brand: "Carmensitas",
+//     category: "Roupas/Calças",
+//     id: "2262",
+//     name: "CALÇA FLARE CANELADA ISA - P",
+//     price: 299,
+//     quantity: 1,
+//     variant: "CALÇA FLARE CANELADA ISA - P"
+//   }
+// ]
